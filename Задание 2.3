@@ -1,0 +1,50 @@
+using System;
+
+namespace Days
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           #region for
+
+            Console.WriteLine("for");
+
+            for (int i = 10; i <= 25; i++)
+            {
+                Console.WriteLine($"{i} {i}.4");
+            }
+
+            #endregion
+            #region while
+
+            Console.WriteLine("while");
+
+
+            var start = 9;
+            while (start < 25)
+            {
+                Console.WriteLine($"{++start} {start}.4");
+            }
+
+            #endregion
+            #region do/while
+
+            Console.WriteLine("do/while");
+            start = 9;
+            do
+            {
+                Console.WriteLine($"{++start} {start}.4");
+            }
+
+            while (start < 25);
+
+
+
+
+            #endregion
+
+            Console.ReadKey();
+        }
+    }
+}
